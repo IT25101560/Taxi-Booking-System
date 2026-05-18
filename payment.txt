@@ -1,0 +1,9 @@
+Customer: user3 | Route: user3 (Hatton to Colombo) | Type: Premium | Distance: 100.0 km | Amount: Rs.100000.0 | Status: PAID
+Customer: user3 | Route: user3 (Hatton to Colombo) | Type: Comfort | Distance: 95.0 km | Amount: Rs.28500.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to malmbe) | Type: Fast & Cheap | Distance: 10.0 km | Amount: Rs.500.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to malmbe) | Type: Economy | Distance: 60.5 km | Amount: Rs.6050.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to malmbe) | Type: Premium | Distance: 100.0 km | Amount: Rs.10200.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to malmbe) | Type: Fast & Cheap | Distance: 15.0 km | Amount: Rs.750.0 | Status: PAID
+Customer: user1 | Route: user1 (Hatton to Colombo) | Type: Economy | Distance: 20.0 km | Amount: Rs.2000.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to Colombo) | Type: Economy | Distance: 30.0 km | Amount: Rs.3000.0 | Status: PAID
+Customer: user1 | Route: user1 (kaduwela to Colombo) | Type: Economy | Distance: 40.0 km | Amount: Rs.4000.0 | Status: PAID
