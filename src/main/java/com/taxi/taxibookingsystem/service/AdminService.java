@@ -14,6 +14,8 @@ public class AdminService {
 
     private final String FILE_NAME = "users.txt";
 
+    // CRUD operation methods
+    
     public synchronized List<String> getAllUsers() {
         List<String> users = new ArrayList<>();
         File userFile = new File(FILE_NAME);
