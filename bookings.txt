@@ -1,0 +1,14 @@
+user1 (kaduwela to malmbe),Fast & Cheap,10.0,500.0,COMPLETED by driver1 - PAID
+user1 (kaduwela to malmbe),Economy,60.5,6050.0,COMPLETED by driver2 - PAID
+user2 (Ginigathena to kaduwela),Comfort,80.5,5685.0,COMPLETED by driver3
+user2 (kaduwela to malmbe),Fast & Cheap,5.0,250.0,COMPLETED by driver1
+user2 (kaduwela to malmbe),Family,50.0,20000.0,COMPLETED by driver4
+user1 (kaduwela to malmbe),Premium,100.0,10200.0,COMPLETED by driver5 - PAID
+user1 (kaduwela to malmbe),Fast & Cheap,15.0,750.0,COMPLETED by driver1 - PAID
+user3 (Hatton to Colombo),Premium,100.0,100000.0,COMPLETED by driver5 - PAID
+user1 (kaduwela to malmbe),Economy,1000.0,100000.0,COMPLETED by driver2
+user3 (Hatton to Colombo),Comfort,95.0,28500.0,COMPLETED by driver3 - PAID
+user1 (kaduwela to malmbe),Economy,5.0,500.0,COMPLETED by driver2
+user1 (Hatton to Colombo),Economy,20.0,2000.0,COMPLETED by driver2 - PAID
+user1 (kaduwela to Colombo),Economy,30.0,3000.0,COMPLETED by driver2 - PAID
+user1 (kaduwela to Colombo),Economy,40.0,4000.0,COMPLETED by driver2 - PAID
