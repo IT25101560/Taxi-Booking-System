@@ -61,7 +61,7 @@ public class BookingController {
             model.addAttribute("pendingBookings", filterStatus(userBookings, "PENDING", true));
             model.addAttribute("ongoingBookings", filterStatus(userBookings, "ONGOING", false));
 
-            // FIXED: Safely combines both COMPLETED and DECLINED trips into one history list
+
             List<String> historyBookings = userBookings.stream().filter(b -> {
                 if (!b.contains(",")) return false;
                 String status = b.substring(b.lastIndexOf(",") + 1).trim();
