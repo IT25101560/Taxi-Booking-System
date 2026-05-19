@@ -8,19 +8,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@Controller //handles HTTP requests and returns view pages
 public class AdminController {
 
-    @Autowired
+    @Autowired //dependency injection
     private AdminService adminService;
 
-    @GetMapping("/admin")
+    @GetMapping("/admin") //get http request
     public String adminDashboard(HttpSession session) {
         if (!"ADMIN".equals(session.getAttribute("role"))) return "redirect:/login";
         return "admin-dashboard";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/users") 
     public String manageUsers(HttpSession session, Model model) {
         if (!"ADMIN".equals(session.getAttribute("role"))) return "redirect:/home";
 
@@ -29,7 +29,7 @@ public class AdminController {
         return "user-management";
     }
 
-    @PostMapping("/admin-add-user")
+    @PostMapping("/admin-add-user") //post http request
     public String adminAddUser(@RequestParam String username, @RequestParam String email, @RequestParam String password, @RequestParam String role, HttpSession session) {
         if ("ADMIN".equals(session.getAttribute("role"))) {
             // Uses the Model Object
