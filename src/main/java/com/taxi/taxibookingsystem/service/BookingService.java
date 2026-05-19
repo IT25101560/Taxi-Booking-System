@@ -30,7 +30,7 @@ public class BookingService {
         return bookings;
     }
 
-    // --- UPDATED PRICING LOGIC ---
+
     public double calculateFare(String cabType, double dist) {
         double fare;
         String typeLower = cabType.toLowerCase();
@@ -44,7 +44,7 @@ public class BookingService {
         } else if (typeLower.contains("economy")) {
             fare = dist * 100;
         } else {
-            // Fallback for "Fast & Cheap", "FastCheap", etc.
+ 
             fare = dist * 70;
         }
 
@@ -64,7 +64,7 @@ public class BookingService {
         processFile(targetLine, null, false, 0, 0); // null status implies deletion
     }
 
-    // Safely reads and replaces the specific row in the bookings text file
+
     private void processFile(String targetLine, String newStatus, boolean alterMath, double dist, double fare) {
         if (targetLine == null || !targetLine.contains(",")) return;
 
@@ -86,7 +86,7 @@ public class BookingService {
                 String lineCore = line.substring(0, lineLastComma).trim();
                 String lineStatus = line.substring(lineLastComma + 1).trim();
 
-                // It must match BOTH the core details AND the specific status
+               
                 if (!actionTaken && lineCore.equals(coreMatch) && lineStatus.equals(targetStatusStr)) {
                     actionTaken = true;
                     if (newStatus == null) continue; // Deletion
