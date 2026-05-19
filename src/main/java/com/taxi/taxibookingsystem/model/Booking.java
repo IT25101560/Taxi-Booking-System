@@ -5,8 +5,8 @@ public class Booking {
     private String pickupLocation;
     private String dropoffLocation;
     private String cabType;
-    private String distance; // String because it can be a number or "TBD"
-    private String fare;     // String because it can be a number or "TBD"
+    private String distance;
+    private String fare;     
     private String status;
 
     public Booking(String customerName, String pickupLocation, String dropoffLocation, String cabType, String distance, String fare, String status) {
@@ -25,7 +25,7 @@ public class Booking {
         this.fare = String.valueOf(fare);
     }
 
-    // Formats perfectly for bookings.txt
+  
     @Override
     public String toString() {
         return customerName + " (" + pickupLocation + " to " + dropoffLocation + ")," +
