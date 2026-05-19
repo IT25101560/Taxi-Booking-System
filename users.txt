@@ -1,0 +1,10 @@
+Driver1,driver1,USER,driver1@taxi.com
+user1,user1,USER,user1@taxi.com
+admin0,admin0,ADMIN,admin0@taxi.com
+driver1,driver1,USER,driver1@taxi.com
+driver2,driver2,USER,driver2@taxi.com
+driver3,driver3,USER,driver3@taxi.com
+driver4,driver4,USER,driver4@taxi.com
+driver5,driver5,USER,driver5@taxi.com
+user2,user2,USER,user2@taxi.com
+user3,user3,USER,user3@taxi.com
