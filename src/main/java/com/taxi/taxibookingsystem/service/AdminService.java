@@ -9,7 +9,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Service //tells Spring that the class contains service
 public class AdminService {
 
     private final String FILE_NAME = "users.txt";
@@ -19,7 +19,7 @@ public class AdminService {
         File userFile = new File(FILE_NAME);
         if (!userFile.exists()) return users;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(userFile))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(userFile))) {  //efficiently write text data into files
             String line;
             while ((line = br.readLine()) != null) {
                 if (!line.trim().isEmpty()) {
@@ -30,7 +30,7 @@ public class AdminService {
         return users;
     }
 
-    public synchronized void addSystemUser(User newUser) {
+    public synchronized void addSystemUser(User newUser) { //prevents multiple threads from accessing the method at the same time
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
             bw.write(newUser.toString());
             bw.newLine();
